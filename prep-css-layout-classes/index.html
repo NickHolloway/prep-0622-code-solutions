@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Layout Classes</title>
+  <link rel="stylesheet" href="reset.css">
+  <style>
+    /* stylelint-disable block-no-empty */
+    body {
+      font-family: sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .container {
+      max-width: 992px;
+      margin:auto;
+      text-align: center;
+    }
+
+    .row {
+      width:100%;
+      display:flex;
+    }
+
+    .column {
+      flex-basis: calc(100%/3);
+      padding-left:8px;
+      padding-right:8px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Complete the HTML here -->
+  <div class="container">
+    <h3>Indiana Jones
+
+    </h3>
+
+    <div class="row">
+      <div class="column">
+        <img src="images/raiders.jpg" alt="Raiders of the Lost Ark">
+        <h3>
+          Raiders of the Lost Ark
+        </h3>
+        <p>
+          Indiana Jones and the Lost Ark is the first movie in the Indiana Jones series. It came out in 1981 and was directed by Steven Spielberg and James Mangold. It is rated an 8.4/10 on IMDb.
+        </p>
+      </div>
+      <div class="column">
+        <img src="images/temple.jpg" alt="Indiana Jones and the Temple of Doom">
+        <h3>
+          Temple of Doom
+        </h3>
+        <p>
+          Indiana Jones and the Temple of Doom is the second movie in the Indiana Jones series. It came out in 1984 and had Harrison For playing Indiana Jones. It was only rated a 7.5/10 on IMDb.
+        </p>
+      </div>
+      <div class="column">
+        <img src="images/crusade.jpg" alt="Indiana Jones and the Last Crusade">
+        <h3>
+          The Last Crusade
+        </h3>
+        <p>
+          Indiana Jones and the Last Crusade is the third movie in the Indiana Jones series.
+          It cam out in 1989 and was the second highest grossing Indiana Jones movie, only second to the 2008 movie, Indiana Jones and the Kingdom of the Crystal Skull.
+          It was rated an 8.2/10 on IMDb.
+        </p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
