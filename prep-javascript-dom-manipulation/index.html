@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript DOM Manipulation</title>
+  <style>
+    #container {
+      border: 2px solid green;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <p class="first-paragraph">
+      I really like coding.
+    </p>
+    <p class="second-paragraph">
+      I also really like to watch television and eating pancakes.
+    </p>
+    <p class="third-paragraph">
+      I hope one day to meet people that also like coding, television, and pancakes.
+    </p>
+  </div>
+  <script>
+    var $secondParagraph = document.queryselector('.second-paragraph');
+    var $thirdParagraph = document.queryselector('.third-paragraph');
+
+    $secondParagraph.textcontent = 'I also really like to watch television and eating pancakes';
+
+    $thirdParagraph.textcontent = 'I hope one day to meet people that also like coding, television, and pancakes';
+  </script>
+</body>
+</html>
